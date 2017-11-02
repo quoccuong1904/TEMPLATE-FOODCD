@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thông tin tài khoản</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap.css">
+    <link rel="stylesheet" href="vendor/five-col.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vendor/login-modal/js/main.js"></script>
+    <link rel="stylesheet" href="vendor/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/login-modal/css/login-modal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body >
+<!-- Begin header -->
+<section id="header" class="header">
+    <!-- Begin header-top -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                    <!-- Begin hotline -->
+                    <div class="hotline" style="text-align: center;">
+                        <p><strong>Hotline: </strong>0930001009</p>
+                    </div>
+                    <!-- End hotline -->
+                </div>
+                <div class="col-md-8 col-sm-9">
+                    <!-- Begin header-top-right -->
+                    <div class="header-top-right">
+                     <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tiếng Anh
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Tiếng Việt</a></li>
+                        </ul>
+                      </div>
+                       <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tài Khoản
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Tài khoản 1</a></li>
+                          <li><a href="#">Tài khoản 2</a></li>
+                          <li><a href="#">Tài khoản 3</a></li>
+                        </ul>
+                      </div>
+                       <div class="dropdown login">
+                            <a href="#0" class="btn btn-primary cd-signin">Đăng ký</a>
+                        </div>
+                         <div class="dropdown login">
+                            <a href="#0" class="btn btn-primary cd-signup">Đăng nhập</a>
+                        </div>
+                        <!-- form đăng ký - đăng nhập -->
+                        <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+                            <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+                                <ul class="cd-switcher">
+                                    <li><a href="#0">Đăng nhập</a></li>
+                                    <li><a href="#0">Đăng ký</a></li>
+                                </ul>
+
+                                <div id="cd-login"> <!-- log in form -->
+                                    <form class="cd-form">
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                                            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                                            <span class="cd-error-message">Lỗi email</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-password" for="signin-password">Mật khẩu</label>
+                                            <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Mật khẩu">
+                                            <a href="#0" class="hide-password">Ẩn</a>
+                                            <span class="cd-error-message">Lỗi mật khẩu!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input type="checkbox" id="remember-me" checked>
+                                            <label for="remember-me">Lưu mật khẩu</label>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input class="full-width" type="submit" value="Đăng nhập">
+                                        </p>
+                                    </form>
+                                    
+                                    <p class="cd-form-bottom-message"><a href="#0">Quên mật khẩu?</a></p>
+                                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                                </div> <!-- cd-login -->
+
+                                <div id="cd-signup"> <!-- sign up form -->
+                                    <form class="cd-form">
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-username" for="signup-username">Tên</label>
+                                            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Tên">
+                                            <span class="cd-error-message">Lỗi Tên!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                                            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                                            <span class="cd-error-message">Lỗi Email!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-password" for="signup-password">Mật khẩu</label>
+                                            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Mật khẩu">
+                                            <a href="#0" class="hide-password">Ẩn</a>
+                                            <span class="cd-error-message">Lỗi mật khẩu!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input type="checkbox" id="accept-terms">
+                                            <label for="accept-terms">Tạo tài khoản đồng nghĩa với việc bạn đồng ý với <a href="#0">Điều khoản dịch vụ và chính sách riêng tư</a> của chúng tôi</label>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input class="full-width has-padding" type="submit" value="Tạo tài khoản">
+                                        </p>
+                                    </form>
+
+                                    <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                                </div> <!-- cd-signup -->
+
+                                <div id="cd-reset-password"> <!-- reset password form -->
+                                    <p class="cd-form-message">Bạn quên mật khẩu? Vui lòng nhập email đã đăng ký. Bạn sẽ nhận được một đường dẫn tạo mật khẩu mới đến email của bạn</p>
+
+                                    <form class="cd-form">
+                                        <p class="fieldset">
+                                            <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                                            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                                            <span class="cd-error-message">Lỗi Email!</span>
+                                        </p>
+
+                                        <p class="fieldset">
+                                            <input class="full-width has-padding" type="submit" value="Đặt lại mật khẩu">
+                                        </p>
+                                    </form>
+
+                                    <p class="cd-form-bottom-message"><a href="#0">Trở lại trang đăng nhập</a></p>
+                                </div> <!-- cd-reset-password -->
+                                <a href="#0" class="cd-close-form">Đóng</a>
+                            </div> <!-- cd-user-modal-container -->
+                        </div> <!-- cd-user-modal -->
+                        <!-- end form đăng ký - đăng nhập -->
+                    </div>
+                    <!-- End header-top-right -->
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <!-- End header-top -->
+    <!-- Begin header-bottom -->
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div id="logo"><a class="navbar-brand" href="index.html">FOODCD</a></div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="col-right">
+                        <div id="search">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group add-on">
+                              <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                              <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                         </form>
+                    </div>
+                    <div id="wishlist-basket">
+                        <div class="wishlist-basket-float">
+                            <a href="#" class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                            <a href="#" class="btn"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            <a href="#" class="btn price">$ 0.00</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <!-- End header-bottom -->
+</section> 
+<!-- End header -->
+
+<!-- Begin menu -->
+<nav class="navbar">
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+    </button>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <!-- Begin hệ thống cửa hàng -->
+                <div class="he-thong-cua-hang">
+                    <a class="box-he-thong" href="#">Hệ thống cửa hàng</a>
+                </div>
+
+            <!-- End hệ thống cửa hàng -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9 push-sm-3">
+                <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+                    <ul class="nav navbar-nav primary ">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item sub-cat">
+                          <a class="nav-link" href="about.html">Giới thiệu <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                          <ul class="sub">
+                            <li><a href="index.html">Sơ lược về công ty</a></li>
+                            <li><a href="index.html">Tầm nhìn</a></li>
+                            <li><a href="index.html">Sứ mệnh</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item sub-cat">
+                          <a class="nav-link" href="">Sản phẩm <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                          <ul class="sub">
+                            <li><a href="">Thức ăn cho cá</a></li>
+                            <li><a href="">Thức ăn cho gà</a></li>
+                            <li><a href="">Thức ăn cho tôm</a></li>
+                          </ul>
+                          
+                        </li>
+                        <li class="nav-item sub-cat">
+                          <a class="nav-link" href="news.html">Tin Tức <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                          <ul class="sub">
+                            <li><a href="news.html">Tin tức 1</a></li>
+                            <li><a href="news.html">Tin tức 2</a></li>
+                            <li><a href="news.html">Tin tức 3</a></li>
+                          </ul>
+                         
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Hình ảnh</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Tuyển dụng</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div> <!-- end col-sm-9 -->
+        </div>
+    </div>
+</nav>
+<!-- End menu -->
+
+
+<!-- Begin main-content -->
+<section id="main-content">
+	<!-- Begin thong-tin-tai-khoan -->
+	<section class="container profiles-user">
+        
+        <div class="row">
+
+            <h4 class="titleql-all">THÔNG TIN CÁ NHÂN</h4>
+
+            <div class="col-md-3">
+
+                <div class="menu-qltk">
+
+                    <div class="title-qltk">
+                        <img src="img/iconqltk.png" alt="">   
+                        <span>TÀI KHOẢN</span> 
+                    </div>
+
+                    <ul class="menu-qltk-content">
+                        <li><a class="active-menu-qttk" href="thongtincanhan.html">Thông tin cá nhân</a></li>
+                        <li><a href="quanlytaikhoan.html">Danh sách địa chỉ</a></li>
+                        <li><a href="doimk.html">Đổi mật khẩu</a></li>
+                    </ul>
+
+                    <div class="title-qltk">
+                        <img src="img/iconqltkc.png" alt="">   
+                        <span>ĐƠN HÀNG</span> 
+                    </div>
+
+                    <ul class="menu-qltk-content menu-qltk-content-1">
+                        <li><a href="lichsudonhang.html">Lịch sử đơn hàng</a></li>
+                        <li><a href="danhsachyeuthich.html">Danh sách yêu thích</a></li>
+                    </ul>
+
+                    <span class="dangxuat-menu-qltk">Đăng xuất</span>
+                    
+                </div>
+                <!-- /menu-qltk -->
+
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="profiles-user-content">
+
+                    <span class="name-sua">Phan Cao Huân</span>
+
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Họ tên</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Nhập họ tên">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Ngày sinh</label>
+
+                            <div class="col-sm-9">
+
+                                <div class="row row-12">
+
+                                    <div class="col-sm-4">
+                                        <div class="form-control profiles-user-combox">
+                                            
+                                            <select>
+
+                                                <option value="" disabled selected hidden>Ngày</option>
+                                                <option value="HI">22</option>
+                                                <option value="CA">23</option>
+                                                <option value="NV">24</option>
+                                                <option value="OR">25</option>
+                                                <option value="WA">26</option>
+                                            
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <!-- /col-sm-4  -->
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="form-control profiles-user-combox">
+                                            
+                                            <select>
+
+                                                <option value="" disabled selected hidden>Tháng</option>
+                                                <option value="HI">8</option>
+                                                <option value="CA">9</option>
+                                                <option value="NV">10</option>
+                                                <option value="OR">11</option>
+                                                <option value="WA">12</option>
+                                            
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <!-- /col-sm-4  -->
+
+                                    <div class="col-sm-4">
+                                        <div class="form-control profiles-user-combox">
+                                            
+                                            <select>
+
+                                                <option value="" disabled selected hidden>Năm</option>
+                                                <option value="HI">1990</option>
+                                                <option value="CA">1991</option>
+                                                <option value="NV">1992</option>
+                                                <option value="OR">1993</option>
+                                                <option value="WA">1994</option>
+                                            
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <!-- /col-sm-4  -->
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /form-group -->
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Giới tính</label>
+
+                            <div class="col-sm-9">
+
+                                <div class="form-control profiles-user-combox">
+                                    
+                                    <select>
+
+                                        <option value="" disabled selected hidden>Chọn giới tính</option>
+                                        <option value="HI">Nam</option>
+                                        <option value="CA">Nữ</option>
+                                        <option value="NV">Khác</option>
+                                    
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <!-- /col-sm-6 -->
+
+                        </div>
+                        <!-- /form-group -->
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Tỉnh/ TP</label>
+
+                            <div class="col-sm-9">
+
+                                <div class="form-control profiles-user-combox">
+                                    
+                                    <select>
+
+                                        <option value="" disabled selected hidden>Chọn Tỉnh/ TP</option>
+                                        <option value="HI">Hồ Chí Minh</option>
+                                        <option value="CA">Cần Thơ</option>
+                                        <option value="NV">Hà Nội</option>
+                                    
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <!-- /col-sm-6 -->
+
+                        </div>
+                        <!-- /form-group -->
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Quận/ Huyện</label>
+
+                            <div class="col-sm-9">
+
+                                <div class="form-control profiles-user-combox">
+                                    
+                                    <select>
+
+                                        <option value="" disabled selected hidden>Chọn Quận/ Huyện</option>
+                                        <option value="HI">Quận 11</option>
+                                        <option value="CA">Quận 12</option>
+                                        <option value="NV">Quận 13</option>
+                                    
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <!-- /col-sm-6 -->
+
+                        </div>
+                        <!-- /form-group -->
+
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Phường/ Xã</label>
+
+                            <div class="col-sm-9">
+
+                                <div class="form-control profiles-user-combox">
+                                    
+                                    <select>
+
+                                        <option value="" disabled selected hidden>Chọn Phường/ Xã</option>
+                                        <option value="HI">Phường 14</option>
+                                        <option value="CA">Phường 1</option>
+                                        <option value="NV">Phường 15</option>
+                                    
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <!-- /col-sm-6 -->
+
+                        </div>
+                        <!-- /form-group -->
+
+                        <div class="form-group">
+
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Số nhà</label>
+
+                            <div class="col-sm-9">
+                                    
+                                <textarea class="form-control" rows="3" placeholder="Nhập Số nhà"></textarea>
+
+                            </div>
+                            <!-- /col-sm-6 -->
+
+                        </div>
+                        <!-- /form-group -->
+
+                        <div class="form-group">
+
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name">Số ĐT</label>
+
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" placeholder="Nhập Số Điện Thoại">
+                            </div>
+                            
+                        </div>
+                        <!-- /form-group -->
+
+                        <div class="form-group">
+
+                            <label for="inputEmail3" class="col-sm-3 control-label profiles-user-name"></label>
+
+                            <div class="col-sm-9">
+                                <button type="submit" class="btn btn-default form-control profiles-user-content-btn">Lưu thay đổi</button>
+                            </div>
+                            
+                        </div>
+                        <!-- /form-group -->
+
+                    </form>
+                    <!-- /form -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+	<!-- End thogn tin tai khoan -->
+</section>
+
+<!-- End main-content -->
+
+<!-- Begin footer -->
+<section id="footer">
+    <!-- Begin footer-top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-logo footer-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12"><a href="index.html"><h1 class="logo">FOODCD</h1></a></div>
+                            </div>
+                            <div class="row contact">
+                                <div class="col-sm-3 phone"><img src="images/phone.png" alt=""></div>
+                                <div class="col-sm-9">
+                                    <p id="hotline">Hotline: (028) 3264591</p>
+                                    <p id="address">125 Nguyễn trải, Phường 12, Quận 1, Tp.HCM</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="social">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                     <!-- End footer-1 -->
+                </div> <!-- end col-sm-4 -->
+                <div class="col-md-2 col-sm-3">
+                    <div class="footer-2">
+                        <span class="footer-head">Danh mục</span>
+                        <ul>
+                            <a href="#">
+                                <li>Thức ăn cho gia súc</li>
+                            </a>
+                            <a href="#">
+                                <li>Thức ăn cho gia cầm</li>
+                            </a>
+                            <a href="#">
+                                <li>Thức ăn cho cá</li>
+                            </a>
+                            <a href="#">
+                                <li>Thức ăn cho tôm</li>
+                            </a>
+                            <a href="#">
+                                <li>TThức ăn cho thủy cầm</li>
+                            </a>
+                            <a href="#">
+                                <li>Thức ăn cho thú cưng</li>
+                            </a>
+                            <a href="#">
+                                <li>Thức ăn khác</li>
+                            </a>
+                        </ul>
+                    </div> <!-- End footer-2 -->
+                </div><!-- end col-sm-2 -->
+                <div class="col-md-2 col-sm-3">
+                    <div class="footer-3">
+                        <span class="footer-head">Thông tin</span>
+                        <ul>
+                            <a href="#">
+                                <li>Liên hệ</li>
+                            </a>
+                            <a href="#">
+                                <li>Sitemap</li>
+                            </a>
+                            <a href="#">
+                                <li>Tài khoản</li>
+                            </a>
+                            <a href="#">
+                                <li>Chính sách</li>
+                            </a>
+                            <a href="#">
+                                <li>Quyền riêng tư</li>
+                            </a>
+                            <a href="#">
+                                <li>Webmail</li>
+                            </a>
+                            <a href="#">
+                                <li>Thông tin nội bộ</li>
+                            </a>
+                        </ul>
+                    </div> <!-- End footer-3 -->
+                </div><!-- end col-sm-2 -->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-4">
+                        <span class="footer-head">Hình ảnh</span>
+                        <div class="footer-img">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 nopadding">
+                                        <img class="img-fluid big-img" src="images/img-1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="row">
+                                            <img class="img-fluid small-img" src="images/img-2.jpg" alt="">
+                                            <img class="img-fluid small-img" src="images/img-2.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row bank">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- End footer-3 -->
+                </div><!-- end col-sm-2 -->
+            </div>
+        </div>
+    </div> <!-- End footer-top -->
+    <!-- Begin footer-bottom -->
+    
+</section> 
+<!-- End footer -->
+
+<!-- Begin footer-bottom -->
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <p> All Rights Reserved © <a href="#">CDFOD</a> 2017</p>
+        </div>
+    </div>
+</div>
+<!-- End footer-bottom -->
+</body>
+</html>

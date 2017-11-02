@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chi tiết tin tức</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+ 	<link rel="stylesheet" href="vendor/bootstrap.css">
+ 	<link rel="stylesheet" href="vendor/five-col.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<script src="vendor/login-modal/js/main.js"></script>
+ 	<link rel="stylesheet" href="vendor/font-awesome.min.css">
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+ 	<link rel="stylesheet" type="text/css" href="vendor/login-modal/css/login-modal.css">
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body >
+<!-- Begin header -->
+<section id="header" class="header">
+	<!-- Begin header-top -->
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-3">
+					<!-- Begin hotline -->
+					<div class="hotline" style="text-align: center;">
+						<p><strong>Hotline: </strong>0930001009</p>
+					</div>
+					<!-- End hotline -->
+				</div>
+				<div class="col-md-8 col-sm-9">
+					<!-- Begin header-top-right -->
+					<div class="header-top-right">
+					 <div class="dropdown">
+					    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tiếng Anh
+					    <span class="caret"></span></button>
+					    <ul class="dropdown-menu">
+					      <li><a href="#">Tiếng Việt</a></li>
+					    </ul>
+					  </div>
+					   <div class="dropdown">
+					    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tài Khoản
+					    <span class="caret"></span></button>
+					    <ul class="dropdown-menu">
+					      <li><a href="#">Tài khoản 1</a></li>
+					      <li><a href="#">Tài khoản 2</a></li>
+					      <li><a href="#">Tài khoản 3</a></li>
+					    </ul>
+					  </div>
+					   <div class="dropdown login">
+					    	<a href="#0" class="btn btn-primary cd-signin">Đăng ký</a>
+					  	</div>
+					  	 <div class="dropdown login">
+					    	<a href="#0" class="btn btn-primary cd-signup">Đăng nhập</a>
+					  	</div>
+					  	<!-- form đăng ký - đăng nhập -->
+					  	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+							<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+								<ul class="cd-switcher">
+									<li><a href="#0">Đăng nhập</a></li>
+									<li><a href="#0">Đăng ký</a></li>
+								</ul>
+
+								<div id="cd-login"> <!-- log in form -->
+									<form class="cd-form">
+										<p class="fieldset">
+											<label class="image-replace cd-email" for="signin-email">E-mail</label>
+											<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+											<span class="cd-error-message">Lỗi email</span>
+										</p>
+
+										<p class="fieldset">
+											<label class="image-replace cd-password" for="signin-password">Mật khẩu</label>
+											<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Mật khẩu">
+											<a href="#0" class="hide-password">Ẩn</a>
+											<span class="cd-error-message">Lỗi mật khẩu!</span>
+										</p>
+
+										<p class="fieldset">
+											<input type="checkbox" id="remember-me" checked>
+											<label for="remember-me">Lưu mật khẩu</label>
+										</p>
+
+										<p class="fieldset">
+											<input class="full-width" type="submit" value="Đăng nhập">
+										</p>
+									</form>
+									
+									<p class="cd-form-bottom-message"><a href="#0">Quên mật khẩu?</a></p>
+									<!-- <a href="#0" class="cd-close-form">Close</a> -->
+								</div> <!-- cd-login -->
+
+								<div id="cd-signup"> <!-- sign up form -->
+									<form class="cd-form">
+										<p class="fieldset">
+											<label class="image-replace cd-username" for="signup-username">Tên</label>
+											<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Tên">
+											<span class="cd-error-message">Lỗi Tên!</span>
+										</p>
+
+										<p class="fieldset">
+											<label class="image-replace cd-email" for="signup-email">E-mail</label>
+											<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+											<span class="cd-error-message">Lỗi Email!</span>
+										</p>
+
+										<p class="fieldset">
+											<label class="image-replace cd-password" for="signup-password">Mật khẩu</label>
+											<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Mật khẩu">
+											<a href="#0" class="hide-password">Ẩn</a>
+											<span class="cd-error-message">Lỗi mật khẩu!</span>
+										</p>
+
+										<p class="fieldset">
+											<input type="checkbox" id="accept-terms">
+											<label for="accept-terms">Tạo tài khoản đồng nghĩa với việc bạn đồng ý với <a href="#0">Điều khoản dịch vụ và chính sách riêng tư</a> của chúng tôi</label>
+										</p>
+
+										<p class="fieldset">
+											<input class="full-width has-padding" type="submit" value="Tạo tài khoản">
+										</p>
+									</form>
+
+									<!-- <a href="#0" class="cd-close-form">Close</a> -->
+								</div> <!-- cd-signup -->
+
+								<div id="cd-reset-password"> <!-- reset password form -->
+									<p class="cd-form-message">Bạn quên mật khẩu? Vui lòng nhập email đã đăng ký. Bạn sẽ nhận được một đường dẫn tạo mật khẩu mới đến email của bạn</p>
+
+									<form class="cd-form">
+										<p class="fieldset">
+											<label class="image-replace cd-email" for="reset-email">E-mail</label>
+											<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+											<span class="cd-error-message">Lỗi Email!</span>
+										</p>
+
+										<p class="fieldset">
+											<input class="full-width has-padding" type="submit" value="Đặt lại mật khẩu">
+										</p>
+									</form>
+
+									<p class="cd-form-bottom-message"><a href="#0">Trở lại trang đăng nhập</a></p>
+								</div> <!-- cd-reset-password -->
+								<a href="#0" class="cd-close-form">Đóng</a>
+							</div> <!-- cd-user-modal-container -->
+						</div> <!-- cd-user-modal -->
+					  	<!-- end form đăng ký - đăng nhập -->
+					</div>
+					<!-- End header-top-right -->
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- End header-top -->
+	<!-- Begin header-bottom -->
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div id="logo"><a class="navbar-brand" href="index.html">FOODCD</a></div>
+				</div>
+				<div class="col-sm-9">
+					<div class="col-right">
+						<div id="search">
+						<form class="navbar-form" role="search">
+						    <div class="input-group add-on">
+						      <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+						      <div class="input-group-btn">
+						        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						      </div>
+						    </div>
+						 </form>
+					</div>
+					<div id="wishlist-basket">
+						<div class="wishlist-basket-float">
+							<a href="#" class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<a href="#" class="btn"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+							<a href="#" class="btn price">$ 0.00</a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+	<!-- End header-bottom -->
+</section> 
+<!-- End header -->
+
+<!-- Begin menu -->
+<nav class="navbar">
+ 	<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+    </button>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<!-- Begin hệ thống cửa hàng -->
+				<div class="he-thong-cua-hang">
+			   		<a class="box-he-thong" href="#">Hệ thống cửa hàng</a>
+			   	</div>
+
+			<!-- End hệ thống cửa hàng -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-9 push-sm-3">
+				<div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+					<ul class="nav navbar-nav primary ">
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Trang chủ</a>
+					    </li>
+					    <li class="nav-item sub-cat">
+					      <a class="nav-link" href="about.html">Giới thiệu <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					      <ul class="sub">
+					        <li><a href="index.html">Sơ lược về công ty</a></li>
+					        <li><a href="index.html">Tầm nhìn</a></li>
+					        <li><a href="index.html">Sứ mệnh</a></li>
+					      </ul>
+					    </li>
+					    <li class="nav-item sub-cat">
+					      <a class="nav-link" href="">Sản phẩm <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					      <ul class="sub">
+					        <li><a href="">Thức ăn cho cá</a></li>
+					        <li><a href="">Thức ăn cho gà</a></li>
+					        <li><a href="">Thức ăn cho tôm</a></li>
+					      </ul>
+					      
+					    </li>
+					    <li class="nav-item sub-cat">
+					      <a class="nav-link" href="news.html">Tin Tức <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					      <ul class="sub">
+					        <li><a href="news.html">Tin tức 1</a></li>
+					        <li><a href="news.html">Tin tức 2</a></li>
+					        <li><a href="news.html">Tin tức 3</a></li>
+					      </ul>
+					     
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Hình ảnh</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Tuyển dụng</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Liên hệ</a>
+					    </li>
+					</ul>
+				</div>
+				
+			</div> <!-- end col-sm-9 -->
+		</div>
+	</div>
+</nav>
+<!-- End menu -->
+
+<!-- Begin main-content -->
+<section id="main-content trang-tin-tuc-chi-tiet">
+	<div class="container border-container">
+		<!-- Begin duong-dan -->
+		<div class="duong-dan">
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="index.html">Trang chủ</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="about.html">Giới thiệu</a><i class="fa fa-long-arrow-right" aria-hidden="true"></i><a href="#">Lịch sử hình thành</a>
+				</div>
+			</div>
+		</div>
+		<!-- End duong-dan -->
+
+		<!-- Begin menu-tab -->
+		<div class="menu-tab">
+			<div class="row">
+			 	 <div class="col-sm-12">
+			 	 	<ul class="nav nav-tabs">
+						<li class="nav-item">
+							<a href="#" class="nav-link active tam-giac">Tin chăn nuôi</a>
+						</li>
+						<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+					</ul>
+
+			 	 </div> <!-- End col-sm-12 -->
+			 </div> <!-- End row -->
+		</div>
+		<!-- End menu-tab -->
+
+		<!-- Begin noi-dung -->
+		<div class="noi-dung">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Bò, gà Mỹ, Canada... sẽ tràn ngập thị trường?</h1>
+					<p>heo nội dung công bố cam kết của một số nước thành viên TPP như Hoa Kỳ, Nhật Bản, Canada... thuế nhập nhiều mặt hàng thịt bò, gà, sữa vào Việt Nam sẽ giảm về 0% sau 3 - 8 năm.
+ So với các nước khác, VN có phần được ưu ái hơn khi lộ trình cắt giảm thuế suất cho các nông sản từ các nước thành viên TPP dài hơn và linh hoạt hơn.
+
+Về 0% sau 3 - 8 năm
+
+Theo công bố của Chính phủ Nhật, khi TPP có hiệu lực sẽ có 95% dòng thuế của 9.018 mặt hàng, trong đó 99,9% sản phẩm công nghiệp sẽ dần dần được dỡ bỏ thuế. Đây là tỉ lệ cam kết cao nhất trong lịch sử các hiệp định thương mại tự do (FTA) mà Nhật Bản từng ký kết.
+
+Bộ trưởng phụ trách đàm phán TPP của Nhật Bản Akira Amari cho biết Nhật Bản là một trong những quốc gia hiếm hoi trong TPP giữ được nhiều điều khoản bảo vệ thị trường nông nghiệp trong nước, nhưng nước này sẽ cắt giảm ngay lập tức đối với 51% trong số 2.328 mặt hàng nông nghiệp sau khi TPP có hiệu lực.
+
+Theo lộ trình, khoảng 81% các mã hàng nông sản sẽ phải xóa bỏ thuế quan.
+
+Còn theo công bố của Bộ Nông nghiệp Mỹ, các nhà xuất khẩu nông sản nước này đang đứng trước cơ hội lớn để tăng xuất khẩu nông sản và thực phẩm chế biến sang các nước khác, đặc biệt là với thị trường VN.
+				 </p>
+				</div>
+			</div>
+
+			<!-- Begin bài viết liên quan -->
+			<div class="news">
+				<div class="container nopadding">
+				<div class="title-block">
+					<span class="tam-giac">Tin tức liên quan</span>
+				</div>
+				<div id="tin-tuc" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#tin-tuc" data-slide-to="1" class="active"></li>
+						<li data-target="#tin-tuc" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<!-- Begin carousel-product-1 -->
+						<div class="carousel-item active">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-1.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-2.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-3.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-4.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-5.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									
+								</div> <!-- End row -->
+							</div><!-- End container -->
+							
+						</div>
+						<!-- End carousel-products-1 -->
+						<!-- Begin carousel-product-1 -->
+						<div class="carousel-item">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-1.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-2.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-3.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-4.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box tin-tuc-box">
+											<div class="img-box">
+												<a href="#">
+													<img class="img-fluid" src="images/news-5.jpg" alt="">
+												</a>
+												<div class="bg-hover">
+													<i class="fa fa-search" aria-hidden="true"></i>
+												</div>
+											</div>
+											
+											<div class="info">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<span class="category-news">Kinh doanh</span><br>
+												<span class="date-update">09:38, 30/08/2017</span>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											</div>
+											
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									
+								</div> <!-- End row -->
+							</div><!-- End container -->
+							
+						</div>
+						<!-- End carousel-products-1 -->
+
+
+
+					</div>
+					<a class="left carousel-control" href="#tin-tuc" role="button" data-slide="prev">
+						<span class="icon-left" aria-hidden="true"><img src="images/prev.png" alt=""></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#tin-tuc" role="button" data-slide="next">
+						<span class="icon-right" aria-hidden="true"><img src="images/next.png" alt=""></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+
+			<!-- End bài viết liên quan -->
+
+		</div>
+		<!-- End noi-dung -->
+	</div>
+</section>
+
+<!-- End main-content -->
+<!-- Begin footer -->
+<section id="footer">
+	<!-- Begin footer-top -->
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-logo footer-1">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12"><a href="index.html"><h1 class="logo">FOODCD</h1></a></div>
+							</div>
+							<div class="row contact">
+								<div class="col-sm-3 phone"><img src="images/phone.png" alt=""></div>
+								<div class="col-sm-9">
+									<p id="hotline">Hotline: (028) 3264591</p>
+									<p id="address">125 Nguyễn trải, Phường 12, Quận 1, Tp.HCM</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="social">
+									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					 <!-- End footer-1 -->
+				</div> <!-- end col-sm-4 -->
+				<div class="col-md-2 col-sm-3">
+					<div class="footer-2">
+						<span class="footer-head">Danh mục</span>
+						<ul>
+							<a href="#">
+								<li>Thức ăn cho gia súc</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho gia cầm</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho cá</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho tôm</li>
+							</a>
+							<a href="#">
+								<li>TThức ăn cho thủy cầm</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho thú cưng</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn khác</li>
+							</a>
+						</ul>
+					</div> <!-- End footer-2 -->
+				</div><!-- end col-sm-2 -->
+				<div class="col-md-2 col-sm-3">
+					<div class="footer-3">
+						<span class="footer-head">Thông tin</span>
+						<ul>
+							<a href="#">
+								<li>Liên hệ</li>
+							</a>
+							<a href="#">
+								<li>Sitemap</li>
+							</a>
+							<a href="#">
+								<li>Tài khoản</li>
+							</a>
+							<a href="#">
+								<li>Chính sách</li>
+							</a>
+							<a href="#">
+								<li>Quyền riêng tư</li>
+							</a>
+							<a href="#">
+								<li>Webmail</li>
+							</a>
+							<a href="#">
+								<li>Thông tin nội bộ</li>
+							</a>
+						</ul>
+					</div> <!-- End footer-3 -->
+				</div><!-- end col-sm-2 -->
+
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-4">
+						<span class="footer-head">Hình ảnh</span>
+						<div class="footer-img">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6 nopadding">
+										<img class="img-fluid big-img" src="images/img-1.jpg" alt="">
+									</div>
+									<div class="col-sm-6">
+										<div class="row">
+											<img class="img-fluid small-img" src="images/img-2.jpg" alt="">
+											<img class="img-fluid small-img" src="images/img-2.jpg" alt="">
+										</div>
+									</div>
+
+								</div>
+								<div class="row bank">
+									
+								</div>
+							</div>
+						</div>
+
+					</div> <!-- End footer-3 -->
+				</div><!-- end col-sm-2 -->
+			</div>
+		</div>
+	</div> <!-- End footer-top -->
+	<!-- Begin footer-bottom -->
+	
+</section> 
+<!-- End footer -->
+
+<!-- Begin footer-bottom -->
+<div class="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<p> All Rights Reserved © <a href="#">CDFOD</a> 2017</p>
+		</div>
+	</div>
+</div>
+<!-- End footer-bottom -->
+</body>
+</html>

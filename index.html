@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trang chủ</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+ 	<link rel="stylesheet" href="vendor/bootstrap.css">
+ 	<link rel="stylesheet" href="vendor/five-col.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<script src="vendor/login-modal/js/main.js"></script>
+ 	<link rel="stylesheet" href="vendor/font-awesome.min.css">
+ 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+ 	<link rel="stylesheet" type="text/css" href="vendor/login-modal/css/login-modal.css">
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body >
+<!-- Begin header -->
+<section id="header" class="header">
+	<!-- Begin header-top -->
+	<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-3">
+					<!-- Begin hotline -->
+					<div class="hotline" style="text-align: center;">
+						<p><strong>Hotline: </strong>0930001009</p>
+					</div>
+					<!-- End hotline -->
+				</div>
+				<div class="col-md-8 col-sm-9">
+					<!-- Begin header-top-right -->
+					<div class="header-top-right">
+					 <div class="dropdown">
+					    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tiếng Anh
+					    <span class="caret"></span></button>
+					    <ul class="dropdown-menu">
+					      <li><a href="#">Tiếng Việt</a></li>
+					    </ul>
+					  </div>
+					   <div class="dropdown">
+					    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Tài Khoản
+					    <span class="caret"></span></button>
+					    <ul class="dropdown-menu">
+					      <li><a href="#">Tài khoản 1</a></li>
+					      <li><a href="#">Tài khoản 2</a></li>
+					      <li><a href="#">Tài khoản 3</a></li>
+					    </ul>
+					  </div>
+					   <div class="dropdown login">
+					    	<a href="#0" class="btn btn-primary cd-signin">Đăng ký</a>
+					  	</div>
+					  	 <div class="dropdown login">
+					    	<a href="#0" class="btn btn-primary cd-signup">Đăng nhập</a>
+					  	</div>
+					  	<!-- form đăng ký - đăng nhập -->
+					  	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+							<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+								<ul class="cd-switcher">
+									<li><a href="#0">Đăng nhập</a></li>
+									<li><a href="#0">Đăng ký</a></li>
+								</ul>
+
+								<div id="cd-login"> <!-- log in form -->
+									<form class="cd-form">
+										<p class="fieldset">
+											<label class="image-replace cd-email" for="signin-email">E-mail</label>
+											<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+											<span class="cd-error-message">Lỗi email</span>
+										</p>
+
+										<p class="fieldset">
+											<label class="image-replace cd-password" for="signin-password">Mật khẩu</label>
+											<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Mật khẩu">
+											<a href="#0" class="hide-password">Ẩn</a>
+											<span class="cd-error-message">Lỗi mật khẩu!</span>
+										</p>
+
+										<p class="fieldset">
+											<input type="checkbox" id="remember-me" checked>
+											<label for="remember-me">Lưu mật khẩu</label>
+										</p>
+
+										<p class="fieldset">
+											<input class="full-width" type="submit" value="Đăng nhập">
+										</p>
+									</form>
+									
+									<p class="cd-form-bottom-message"><a href="#0">Quên mật khẩu?</a></p>
+									<!-- <a href="#0" class="cd-close-form">Close</a> -->
+								</div> <!-- cd-login -->
+
+								<div id="cd-signup"> <!-- sign up form -->
+									<form class="cd-form">
+										<p class="fieldset">
+											<label class="image-replace cd-username" for="signup-username">Tên</label>
+											<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Tên">
+											<span class="cd-error-message">Lỗi Tên!</span>
+										</p>
+
+										<p class="fieldset">
+											<label class="image-replace cd-email" for="signup-email">E-mail</label>
+											<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+											<span class="cd-error-message">Lỗi Email!</span>
+										</p>
+
+										<p class="fieldset">
+											<label class="image-replace cd-password" for="signup-password">Mật khẩu</label>
+											<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Mật khẩu">
+											<a href="#0" class="hide-password">Ẩn</a>
+											<span class="cd-error-message">Lỗi mật khẩu!</span>
+										</p>
+
+										<p class="fieldset">
+											<input type="checkbox" id="accept-terms">
+											<label for="accept-terms">Tạo tài khoản đồng nghĩa với việc bạn đồng ý với <a href="#0">Điều khoản dịch vụ và chính sách riêng tư</a> của chúng tôi</label>
+										</p>
+
+										<p class="fieldset">
+											<input class="full-width has-padding" type="submit" value="Tạo tài khoản">
+										</p>
+									</form>
+
+									<!-- <a href="#0" class="cd-close-form">Close</a> -->
+								</div> <!-- cd-signup -->
+
+								<div id="cd-reset-password"> <!-- reset password form -->
+									<p class="cd-form-message">Bạn quên mật khẩu? Vui lòng nhập email đã đăng ký. Bạn sẽ nhận được một đường dẫn tạo mật khẩu mới đến email của bạn</p>
+
+									<form class="cd-form">
+										<p class="fieldset">
+											<label class="image-replace cd-email" for="reset-email">E-mail</label>
+											<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+											<span class="cd-error-message">Lỗi Email!</span>
+										</p>
+
+										<p class="fieldset">
+											<input class="full-width has-padding" type="submit" value="Đặt lại mật khẩu">
+										</p>
+									</form>
+
+									<p class="cd-form-bottom-message"><a href="#0">Trở lại trang đăng nhập</a></p>
+								</div> <!-- cd-reset-password -->
+								<a href="#0" class="cd-close-form">Đóng</a>
+							</div> <!-- cd-user-modal-container -->
+						</div> <!-- cd-user-modal -->
+					  	<!-- end form đăng ký - đăng nhập -->
+					</div>
+					<!-- End header-top-right -->
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<!-- End header-top -->
+	<!-- Begin header-bottom -->
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div id="logo"><a class="navbar-brand" href="index.html">FOODCD</a></div>
+				</div>
+				<div class="col-sm-9">
+					<div class="col-right">
+						<div id="search">
+						<form class="navbar-form" role="search">
+						    <div class="input-group add-on">
+						      <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+						      <div class="input-group-btn">
+						        <button class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						      </div>
+						    </div>
+						 </form>
+					</div>
+					<div id="wishlist-basket">
+						<div class="wishlist-basket-float">
+							<a href="#" class="btn"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							<a href="#" class="btn"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+							<a href="#" class="btn price">$ 0.00</a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+	<!-- End header-bottom -->
+</section> 
+<!-- End header -->
+
+<!-- Begin menu -->
+<nav class="navbar">
+ 	<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+            &#9776;
+    </button>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">
+				<!-- Begin hệ thống cửa hàng -->
+				<div class="he-thong-cua-hang">
+			   		<a class="box-he-thong" href="#">Hệ thống cửa hàng</a>
+			   	</div>
+
+			<!-- End hệ thống cửa hàng -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-9 push-sm-3">
+				<div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+					<ul class="nav navbar-nav primary ">
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Trang chủ</a>
+					    </li>
+					    <li class="nav-item sub-cat">
+					      <a class="nav-link" href="about.html">Giới thiệu <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					      <ul class="sub">
+					        <li><a href="index.html">Sơ lược về công ty</a></li>
+					        <li><a href="index.html">Tầm nhìn</a></li>
+					        <li><a href="index.html">Sứ mệnh</a></li>
+					      </ul>
+					    </li>
+					    <li class="nav-item sub-cat">
+					      <a class="nav-link" href="">Sản phẩm <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					      <ul class="sub">
+					        <li><a href="">Thức ăn cho cá</a></li>
+					        <li><a href="">Thức ăn cho gà</a></li>
+					        <li><a href="">Thức ăn cho tôm</a></li>
+					      </ul>
+					      
+					    </li>
+					    <li class="nav-item sub-cat">
+					      <a class="nav-link" href="news.html">Tin Tức <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					      <ul class="sub">
+					        <li><a href="news.html">Tin tức 1</a></li>
+					        <li><a href="news.html">Tin tức 2</a></li>
+					        <li><a href="news.html">Tin tức 3</a></li>
+					      </ul>
+					     
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Hình ảnh</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Tuyển dụng</a>
+					    </li>
+					    <li class="nav-item">
+					      <a class="nav-link" href="index.html">Liên hệ</a>
+					    </li>
+					</ul>
+				</div>
+				
+			</div> <!-- end col-sm-9 -->
+		</div>
+	</div>
+</nav>
+<!-- End menu -->
+
+<!-- Begin slider -->
+<section id="slider">
+	<div class="container nopadding">
+		<div id="carousel-slider" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-slider" data-slide-to="1"></li>
+				<li data-target="#carousel-slider" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner border-box" role="listbox">
+				<div class="carousel-item  active">
+					<img src="images/slider-1.jpg" alt="Slider 1">
+				</div>
+				<div class="carousel-item">
+					<img src="http://via.placeholder.com/1207x481" alt="Slider 2">
+				</div>
+				<div class="carousel-item">
+					<img src="http://via.placeholder.com/1207x481" alt="Slider 3">
+				</div>
+			</div>
+			<a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
+				<span class="icon-left" aria-hidden="true"><img src="images/prev.png" alt=""></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
+				<span class="icon-right" aria-hidden="true"><img src="images/next.png" alt=""></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+</section>
+<!-- End slider -->
+
+<!-- Begin main-content -->
+<section id="main-content">
+	<!-- Begin tab sản phẩm -->
+	<div class="products">
+		<div class="container nopadding">
+			 <div class="row">
+			 	<!-- demo tab -->
+			 	<button class="btn-danh-muc" onclick="myFunction1()">Danh mục sản phẩm</button>
+						<script>
+							function myFunction1() {
+							    var x = document.getElementById('hide-cat');
+							    if (x.style.display === 'none') {
+							        x.style.display = 'block';
+							    } else {
+							        x.style.display = 'none';
+							    }
+							}
+						</script>
+				<section class="tab-menu-1 tab-menu-sp">
+					<ul class="nav nav-tabs" role="tablist" id="hide-cat">
+						  <li class="nav-item">
+						    <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab">Thức ăn cho cá</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">Thức ăn cho tôm</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">Thức ăn cho bò</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="tab" href="#tab4" role="tab">Thức ăn cho heo</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="tab" href="#tab5" role="tab">Thức ăn khác</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" data-toggle="tab" href="#tab6" role="tab">Thức ăn tổng hợp</a>
+						  </li>
+						  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+					</ul>
+					
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1" role="tabpanel">
+							<!-- Begin products-box -->
+							<div class="products-box">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/home.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/test.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>	
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/home.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-4.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-5.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-6.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-7.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-8.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-9.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-10.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+								</div>
+								<!-- End row -->
+							</div>
+							<!-- End products-box-->
+						</div>
+
+						<div class="tab-pane" id="tab2" role="tabpanel">
+							<!-- Begin products-box -->
+							<div class="products-box">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo2</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-2.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-3.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-4.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-5.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-6.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-7.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-8.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-9.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-10.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+								</div>
+								<!-- End row -->
+							</div>
+							<!-- End products-box-->
+						</div>
+
+						<div class="tab-pane" id="tab3" role="tabpanel">
+							<!-- Begin products-box -->
+							<div class="products-box">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo3</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-2.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-3.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-4.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-5.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-6.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-7.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-8.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-9.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-10.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+								</div>
+								<!-- End row -->
+							</div>
+							<!-- End products-box-->
+						</div>
+
+						<div class="tab-pane" id="tab4" role="tabpanel">
+							<!-- Begin products-box -->
+							<div class="products-box">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo4</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-2.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-3.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-4.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-5.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-6.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-7.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-8.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-9.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-10.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+								</div>
+								<!-- End row -->
+							</div>
+							<!-- End products-box-->
+						</div>
+
+						<div class="tab-pane" id="tab5" role="tabpanel">
+							<!-- Begin products-box -->
+							<div class="products-box">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-2.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-3.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-4.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-5.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-6.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-7.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-8.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-9.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-10.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+								</div>
+								<!-- End row -->
+							</div>
+							<!-- End products-box-->
+						</div>
+
+						<div class="tab-pane" id="tab6" role="tabpanel">
+							<!-- Begin products-box -->
+							<div class="products-box">
+								<div class="row">
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-2.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-3.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-4.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-5.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-6.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-7.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-8.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-9.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+									<div class="col-md-1-5 col-sm-4 col-xs-6">
+										<div class="product-box">
+											<a href="#"><img class="img-fluid" src="images/sp-10.jpg" alt=""></a>
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<div class="rating">
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+												<i class="fa fa-star-o" aria-hidden="true"></i>
+											</div>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+											<div class="price">400000đ <span>700000đ</span></div>
+											<div class="cart">
+												<a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+												<span class="zoom"><img src="images/zoom.png" alt=""></span>
+												<span class="heart"><img src="images/heart.png" alt=""></span>
+											</div>
+										</div>
+									</div> <!-- End col-sm-1-5 -->
+								</div>
+								<!-- End row -->
+							</div>
+							<!-- End products-box-->
+						</div>
+
+					</div> <!-- end tab-content -->
+
+				</section>
+					<!-- end demo tab -->
+			 </div> <!-- End row -->
+		</div>
+	</div>
+	<!-- End tab sản phẩm -->
+
+	<!-- Begin banner quảng cáo -->
+	<div class="promotion">
+		<div class="container nopadding">
+			<a href="#"><img class="img-fluid" src="images/banner-promotion.png" alt=""></a>
+		</div>
+	</div>
+	<!-- End banner quảng cáo -->
+
+	<!-- Begin sản phẩm mới -->
+	<div class="new-products">
+		<div class="container nopadding">
+			<div class="title-block">
+				<span class="tam-giac">Sản phẩm mới</span>
+			</div>
+			<div id="san-pham-moi" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#san-pham-moi" data-slide-to="1" class="active"></li>
+					<li data-target="#san-pham-moi" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<!-- Begin carousel-products-1 -->
+						<div class="container">
+							<div class="row">
+								<!-- Begin sanpham thứ 1 -->
+								<div class="col-sm-4 col-xs-6">
+									<div class="container product-box">
+										<div class="row">
+											<div class="col-lg-6">
+												<a class="image-box" href="#"><img class="img-fluid" src="images/home.jpg" alt=""></a>
+											</div>
+											<div class="col-lg-6">
+												<div class="product-content">
+													<a href="#"><h3>Thức ăn cho heo</h3></a>
+													<div class="rating">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</div>
+													<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+													<div class="price">400000đ <span>700000đ</span></div>
+												</div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+								</div> <!-- End col-sm-4 -->
+								<!-- End sản phẩm thứ 1 -->
+
+								<!-- Begin sanpham thứ 1 -->
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="row">
+											<div class="col-lg-6">
+												<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-2.jpg" alt=""></a>
+											</div>
+											<div class="col-lg-6">
+												<div class="product-content">
+													<a class="image-box" href="#"><h3>Thức ăn cho heo</h3></a>
+													<div class="rating">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</div>
+													<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+													<div class="price">400000đ <span>700000đ</span></div>
+												</div>
+											</div>
+											<div class="new-icon"><span>MỚI</span></div>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-4 -->
+								<!-- End sản phẩm thứ 1 -->
+								<!-- Begin sanpham thứ 1 -->
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="row">
+											<div class="col-lg-6">
+												<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-3.jpg" alt=""></a>
+											</div>
+											<div class="col-lg-6">
+												<div class="product-content">
+													<a href="#"><h3>Thức ăn cho heo</h3></a>
+													<div class="rating">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</div>
+													<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+													<div class="price">400000đ <span>700000đ</span></div>
+												</div>
+											</div>
+											<div class="new-icon"><span>MỚI</span></div>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-4 -->
+								<!-- End sản phẩm thứ 1 -->
+								<!-- Begin sanpham thứ 1 -->
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="row">
+											<div class="col-lg-6">
+												<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-4.jpg" alt=""></a>
+											</div>
+											<div class="col-lg-6">
+												<div class="product-content">
+													<a href="#"><h3>Thức ăn cho heo</h3></a>
+													<div class="rating">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</div>
+													<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+													<div class="price">400000đ <span>700000đ</span></div>
+												</div>
+											</div>
+											<div class="new-icon"><span>MỚI</span></div>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-4 -->
+								<!-- End sản phẩm thứ 1 -->
+								<!-- Begin sanpham thứ 1 -->
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="row">
+											<div class="col-lg-6">
+												<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-5.jpg" alt=""></a>
+											</div>
+											<div class="col-lg-6">
+												<div class="product-content">
+													<a href="#"><h3>Thức ăn cho heo</h3></a>
+													<div class="rating">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</div>
+													<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+													<div class="price">400000đ <span>700000đ</span></div>
+												</div>
+											</div>
+											<div class="new-icon"><span>MỚI</span></div>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-4 -->
+								<!-- End sản phẩm thứ 1 -->
+								<!-- Begin sanpham thứ 1 -->
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="row">
+											<div class="col-lg-6">
+												<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-6.jpg" alt=""></a>
+											</div>
+											<div class="col-lg-6">
+												<div class="product-content">
+													<a href="#"><h3>Thức ăn cho heo</h3></a>
+													<div class="rating">
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+														<i class="fa fa-star-o" aria-hidden="true"></i>
+													</div>
+													<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+													<div class="price">400000đ <span>700000đ</span></div>
+												</div>
+											</div>
+											<div class="new-icon"><span>MỚI</span></div>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-4 -->
+								<!-- End sản phẩm thứ 1 -->
+							</div> <!-- End row -->
+						</div><!-- End container -->
+						<!-- End carousel-products-1 -->
+					</div>
+					<div class="carousel-item">
+						<!-- Begin carousel-products-2 -->
+
+						<div class="row">
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-3.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-4.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-5.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-6.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+						</div> <!-- End row -->
+						
+					</div>
+
+					<!-- End carousel-products-1 -->
+
+					<!-- Begin carousel-products-2 -->
+					<div class="carousel-item">
+						<div class="row">
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+							<!-- Begin sanpham thứ 1 -->
+							<div class="col-sm-4 col-xs-6">
+								<div class="product-box">
+									<div class="row">
+										<div class="col-lg-6">
+											<a class="image-box" href="#"><img class="img-fluid" src="images/sp-moi-1.jpg" alt=""></a>
+										</div>
+										<div class="col-lg-6">
+											<div class="product-content">
+												<a href="#"><h3>Thức ăn cho heo</h3></a>
+												<div class="rating">
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+													<i class="fa fa-star-o" aria-hidden="true"></i>
+												</div>
+												<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+												<div class="price">400000đ <span>700000đ</span></div>
+											</div>
+										</div>
+										<div class="new-icon"><span>MỚI</span></div>
+									</div>
+									
+								</div>
+							</div> <!-- End col-sm-4 -->
+							<!-- End sản phẩm thứ 1 -->
+						</div> <!-- End row -->
+						<!-- End carousel-products-2 -->
+					</div>
+					<!-- End carousel-products-2 -->
+
+				</div>
+				<a class="left carousel-control" href="#san-pham-moi" role="button" data-slide="prev">
+					<span class="icon-left" aria-hidden="true"><img src="images/prev.png" alt=""></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#san-pham-moi" role="button" data-slide="next">
+					<span class="icon-right" aria-hidden="true"><img src="images/next.png" alt=""></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	<!-- End sản phẩm mới -->
+
+	<!-- Begin tin tức -->
+	<div class="news">
+		<div class="container nopadding">
+			<div class="title-block">
+				<span class="tam-giac">Tin tức</span>
+			</div>
+			<div id="tin-tuc" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#tin-tuc" data-slide-to="1" class="active"></li>
+					<li data-target="#tin-tuc" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<!-- Begin carousel-product-1 -->
+					<div class="carousel-item active">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-1-5 col-sm-4 col-xs-6">
+									<div class="product-box tin-tuc-box">
+										<div class="img-box">
+											<a href="#">
+												<img class="img-fluid" src="images/home.jpg" alt="">
+											</a>
+											<div class="bg-hover">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+										</div>
+										
+										<div class="info">
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<span class="category-news">Kinh doanh</span><br>
+											<span class="date-update">09:38, 30/08/2017</span>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-1-5 -->
+								<div class="col-md-1-5 col-sm-4 col-xs-6">
+									<div class="product-box tin-tuc-box">
+										<div class="img-box">
+											<a href="#">
+												<img class="img-fluid" src="images/news-2.jpg" alt="">
+											</a>
+											<div class="bg-hover">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+										</div>
+										
+										<div class="info">
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<span class="category-news">Kinh doanh</span><br>
+											<span class="date-update">09:38, 30/08/2017</span>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-1-5 -->
+								<div class="col-md-1-5 col-sm-4 col-xs-6">
+									<div class="product-box tin-tuc-box">
+										<div class="img-box">
+											<a href="#">
+												<img class="img-fluid" src="images/news-3.jpg" alt="">
+											</a>
+											<div class="bg-hover">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+										</div>
+										
+										<div class="info">
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<span class="category-news">Kinh doanh</span><br>
+											<span class="date-update">09:38, 30/08/2017</span>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-1-5 -->
+								<div class="col-md-1-5 col-sm-4 col-xs-6">
+									<div class="product-box tin-tuc-box">
+										<div class="img-box">
+											<a href="#">
+												<img class="img-fluid" src="images/news-4.jpg" alt="">
+											</a>
+											<div class="bg-hover">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+										</div>
+										
+										<div class="info">
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<span class="category-news">Kinh doanh</span><br>
+											<span class="date-update">09:38, 30/08/2017</span>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-1-5 -->
+								<div class="col-md-1-5 col-sm-4 col-xs-6">
+									<div class="product-box tin-tuc-box">
+										<div class="img-box">
+											<a href="#">
+												<img class="img-fluid" src="images/news-5.jpg" alt="">
+											</a>
+											<div class="bg-hover">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</div>
+										</div>
+										
+										<div class="info">
+											<a href="#"><h3>Thức ăn cho heo</h3></a>
+											<span class="category-news">Kinh doanh</span><br>
+											<span class="date-update">09:38, 30/08/2017</span>
+											<p>Thức ăn bổ dưỡng phù hợp với các loại heo, loại thức ăn tổng hợp, đảm bảo chất dinh dưỡng. </p>
+										</div>
+										
+									</div>
+								</div> <!-- End col-sm-1-5 -->
+								
+							</div> <!-- End row -->
+						</div><!-- End container -->
+						
+					</div>
+					<!-- End carousel-products-1 -->
+
+
+				</div>
+				<a class="left carousel-control" href="#tin-tuc" role="button" data-slide="prev">
+					<span class="icon-left" aria-hidden="true"><img src="images/prev.png" alt=""></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#tin-tuc" role="button" data-slide="next">
+					<span class="icon-right" aria-hidden="true"><img src="images/next.png" alt=""></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	<!-- End tin tức -->
+</section>
+
+<!-- End main-content -->
+
+<!-- Begin footer -->
+<section id="footer">
+	<!-- Begin footer-top -->
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-logo footer-1">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12"><a href="index.html"><h1 class="logo">FOODCD</h1></a></div>
+							</div>
+							<div class="row contact">
+								<div class="col-sm-3 phone"><img src="images/phone.png" alt=""></div>
+								<div class="col-sm-9">
+									<p id="hotline">Hotline: (028) 3264591</p>
+									<p id="address">125 Nguyễn trải, Phường 12, Quận 1, Tp.HCM</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="social">
+									<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					 <!-- End footer-1 -->
+				</div> <!-- end col-sm-4 -->
+				<div class="col-md-2 col-sm-3">
+					<div class="footer-2">
+						<span class="footer-head">Danh mục</span>
+						<ul>
+							<a href="#">
+								<li>Thức ăn cho gia súc</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho gia cầm</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho cá</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho tôm</li>
+							</a>
+							<a href="#">
+								<li>TThức ăn cho thủy cầm</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn cho thú cưng</li>
+							</a>
+							<a href="#">
+								<li>Thức ăn khác</li>
+							</a>
+						</ul>
+					</div> <!-- End footer-2 -->
+				</div><!-- end col-sm-2 -->
+				<div class="col-md-2 col-sm-3">
+					<div class="footer-3">
+						<span class="footer-head">Thông tin</span>
+						<ul>
+							<a href="#">
+								<li>Liên hệ</li>
+							</a>
+							<a href="#">
+								<li>Sitemap</li>
+							</a>
+							<a href="#">
+								<li>Tài khoản</li>
+							</a>
+							<a href="#">
+								<li>Chính sách</li>
+							</a>
+							<a href="#">
+								<li>Quyền riêng tư</li>
+							</a>
+							<a href="#">
+								<li>Webmail</li>
+							</a>
+							<a href="#">
+								<li>Thông tin nội bộ</li>
+							</a>
+						</ul>
+					</div> <!-- End footer-3 -->
+				</div><!-- end col-sm-2 -->
+
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-4">
+						<span class="footer-head">Hình ảnh</span>
+						<div class="footer-img">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-6 nopadding">
+										<img class="img-fluid big-img" src="images/img-1.jpg" alt="">
+									</div>
+									<div class="col-sm-6">
+										<div class="row">
+											<img class="img-fluid small-img" src="images/img-2.jpg" alt="">
+											<img class="img-fluid small-img" src="images/img-2.jpg" alt="">
+										</div>
+									</div>
+
+								</div>
+								<div class="row bank">
+									
+								</div>
+							</div>
+						</div>
+
+					</div> <!-- End footer-3 -->
+				</div><!-- end col-sm-2 -->
+			</div>
+		</div>
+	</div> <!-- End footer-top -->
+	<!-- Begin footer-bottom -->
+	
+</section> 
+<!-- End footer -->
+
+<!-- Begin footer-bottom -->
+<div class="footer-bottom">
+	<div class="container">
+		<div class="row">
+			<p> All Rights Reserved © <a href="#">CDFOD</a> 2017</p>
+		</div>
+	</div>
+</div>
+<!-- End footer-bottom -->
+</body>
+</html>
